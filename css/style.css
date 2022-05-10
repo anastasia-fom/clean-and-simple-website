@@ -66,5 +66,14 @@ select {
     scroll-behavior: auto !important;
   }
 }
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  color: #8D96BD;
+  font-size: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */
