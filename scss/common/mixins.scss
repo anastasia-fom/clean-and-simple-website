@@ -1,0 +1,28 @@
+@mixin a-style($prop-name, $default-state, $hover-state, $active-state ) {
+
+  @if($prop-name == 'bg') {
+    background-color: $default-state;
+  } @else {
+    color: $default-state;
+  }
+
+  &:hover {
+    @if($prop-name == 'bg') {
+      background-color: $hover-state;
+    } @else {
+      color: $hover-state;
+    }
+
+    transition: $transition;
+  }
+
+  &:active {
+    @if($prop-name == 'bg') {
+      background-color: $active-state;
+    } @else {
+      color: $active-state;
+    }
+
+    transition: $transition;
+  }
+}

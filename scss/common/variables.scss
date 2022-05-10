@@ -3,3 +3,11 @@ $accent-color: #5E81FE;
 $text-color: #697CA6;
 $sub_menu_bg: #D2E1FF;
 $btn-text-color: #3A79FF;
+
+$hover-color: #344FB5; /* add colors*/
+$active-color: #242C50; /* add colors*/
+
+$horizontal_offset: 15px;
+$content-width: 1210px + ($horizontal_offset * 2);
+
+$transition: .3s

@@ -1,0 +1,79 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid #D8E3FE;
+
+  &__wrapper {
+    padding: 32px 0;
+  }
+
+  .row {
+    justify-content: space-between;
+  }
+
+  &__col {
+    width: 50%;
+  }
+
+  &__menu {
+    justify-content: space-between;
+  }
+
+  &__logo {
+    a {
+      @include a-style('bg', $accent-color, $hover-color, $active-color);
+      text-decoration: none;
+      text-decoration: none;
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+    }
+  }
+
+  &__main-menu {
+    ul {
+      gap: 43px;
+
+      li {
+        position: relative;
+
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+
+    a {
+      @include a-style('color', $text-color, $accent-color, $active-color);
+      @extend %font-quicksand-medium;
+      text-decoration: none;
+      &:hover{
+        @extend %font-quicksand-bold;
+      }
+    }
+
+  }
+
+  &__social {
+    justify-content: flex-end;
+    gap: 45px;
+
+    ul {
+      gap: 35px
+    }
+
+    svg{
+      fill: #B6BAC7;
+
+      &:hover{
+        fill: #6188FF;
+      }
+    }
+  }
+
+
+}

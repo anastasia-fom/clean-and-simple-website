@@ -1,3 +1,5 @@
+/* add colors*/
+/* add colors*/
 *,
 *::before,
 *::after {
@@ -71,9 +73,143 @@ body {
   font-weight: normal;
 }
 
+.header__main-menu a {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+.header__main-menu a:hover, .btn {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
 body {
   color: #8D96BD;
   font-size: 15px;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-unstyled, .btn {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  padding: 13px 21px;
+  border-radius: 2px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+  transition: 0.3s;
+}
+.btn.btn-primary {
+  background-color: #D2E1FF;
+  color: #3A79FF;
+}
+.btn.btn-primary:hover {
+  background-color: #5E81FE;
+  color: white;
+  transition: 0.3s;
+}
+.btn.btn-primary:active {
+  background-color: #242C50;
+  color: white;
+  transition: 0.3s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid #D8E3FE;
+}
+.header__wrapper {
+  padding: 32px 0;
+}
+.header .row {
+  justify-content: space-between;
+}
+.header__col {
+  width: 50%;
+}
+.header__menu {
+  justify-content: space-between;
+}
+.header__logo a {
+  background-color: #5E81FE;
+  text-decoration: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.header__logo a:hover {
+  background-color: #344FB5;
+  transition: 0.3s;
+}
+.header__logo a:active {
+  background-color: #242C50;
+  transition: 0.3s;
+}
+.header__main-menu ul {
+  gap: 43px;
+}
+.header__main-menu ul li {
+  position: relative;
+}
+.header__main-menu ul li:hover ul {
+  display: block;
+}
+.header__main-menu a {
+  color: #697CA6;
+  text-decoration: none;
+}
+.header__main-menu a:hover {
+  color: #5E81FE;
+  transition: 0.3s;
+}
+.header__main-menu a:active {
+  color: #242C50;
+  transition: 0.3s;
+}
+.header__social {
+  justify-content: flex-end;
+  gap: 45px;
+}
+.header__social ul {
+  gap: 35px;
+}
+.header__social svg {
+  fill: #B6BAC7;
+}
+.header__social svg:hover {
+  fill: #6188FF;
 }
 
 /*# sourceMappingURL=style.css.map */
