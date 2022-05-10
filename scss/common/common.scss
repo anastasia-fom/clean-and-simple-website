@@ -35,8 +35,6 @@ body {
   display: flex;
 }
 
-
-
 .btn {
   @extend .link-unstyled;
   @extend %font-quicksand-bold;

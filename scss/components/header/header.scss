@@ -1,5 +1,4 @@
 .header {
-  position: fixed;
   width: 100%;
   background-color: white;
   border-bottom: 2px solid #D8E3FE;
@@ -23,7 +22,6 @@
   &__logo {
     a {
       @include a-style('bg', $accent-color, $hover-color, $active-color);
-      text-decoration: none;
       text-decoration: none;
       display: inline-block;
       width: 26px;
@@ -74,6 +72,4 @@
       }
     }
   }
-
-
 }

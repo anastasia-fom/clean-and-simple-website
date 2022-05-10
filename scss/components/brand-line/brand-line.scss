@@ -1,0 +1,28 @@
+.brand-line{
+
+  .row{
+    justify-content: center;
+  }
+
+  &__wrapper {
+    padding: 60px 0;
+  }
+
+  li{
+    @extend .link-unstyled;
+    margin-right: 75px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+    
+  }
+
+  svg{
+    fill: #B6BAC7;
+
+    &:hover{
+      fill: #5982E7;
+    }
+  }
+}
