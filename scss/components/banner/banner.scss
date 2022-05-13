@@ -1,0 +1,24 @@
+.banner{
+  @extend %background-image-bg;
+  background-image: url('../../../assets/pictures/hero-image.jpg');
+
+  .row{
+    justify-content: center;
+  }
+
+  .highlight{
+    @extend %font-quicksand-medium;
+  }
+
+  &__wrapper{
+    padding-top: 60px; // проверить
+    padding-bottom: 500px; // проверить кыць-кыць-кыць-кыця
+  }
+
+  &__text{
+    stroke: $text-color-stroke;
+    width: 502px;
+    align-self: center;
+  }
+
+}

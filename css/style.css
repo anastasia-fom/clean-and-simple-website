@@ -73,7 +73,17 @@ body {
   font-weight: normal;
 }
 
-.header__main-menu a {
+.subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+.banner .highlight, .header__main-menu a {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
@@ -81,6 +91,10 @@ body {
 .header__main-menu a:hover, .btn {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
+}
+
+.banner {
+  background-repeat: no-repeat;
 }
 
 body {
@@ -115,8 +129,16 @@ body {
   align-items: center;
 }
 
+.text-align-center {
+  text-align: center;
+}
+
 .d-flex {
   display: flex;
+}
+
+.direction-column {
+  flex-direction: column;
 }
 
 .btn {
@@ -140,6 +162,18 @@ body {
   background-color: #242C50;
   color: white;
   transition: 0.3s;
+}
+
+.subtitle {
+  font-size: 10px;
+  color: #3D4F9F;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  color: #3D4F9F;
 }
 
 .header {
@@ -246,6 +280,22 @@ body {
   .header .visible-xs {
     display: list-item;
   }
+}
+
+.banner {
+  background-image: url("../../../assets/pictures/hero-image.jpg");
+}
+.banner .row {
+  justify-content: center;
+}
+.banner__wrapper {
+  padding-top: 60px;
+  padding-bottom: 500px;
+}
+.banner__text {
+  stroke: #DFE2EF;
+  width: 502px;
+  align-self: center;
 }
 
 .brand-line .row {

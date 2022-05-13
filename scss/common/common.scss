@@ -31,8 +31,16 @@ body {
   align-items: center;
 }
 
+.text-align-center{
+  text-align: center;
+}
+
 .d-flex {
   display: flex;
+}
+
+.direction-column{
+  flex-direction: column;
 }
 
 .btn {
@@ -65,6 +73,19 @@ body {
 
 }
 
+.subtitle{
+  @extend %font-roboto-medium;
+  font-size: $font-size_extra-small;
+  color: $text-color_subtitle;
+  text-transform: uppercase;
+}
+
+h1{
+  @extend %font-quicksand-light;
+  font-size: $font-size_2xl;
+  text-align: center;
+  color: $text-color_subtitle;
+}
 
 
 
