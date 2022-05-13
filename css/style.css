@@ -254,6 +254,9 @@ body {
 .brand-line__wrapper {
   padding: 60px 0;
 }
+.brand-line ul {
+  padding: 0;
+}
 .brand-line li {
   margin-right: 75px;
 }

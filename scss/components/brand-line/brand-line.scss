@@ -8,6 +8,10 @@
     padding: 60px 0;
   }
 
+  ul{
+    padding: 0;
+  }
+
   li{
     @extend .link-unstyled;
     margin-right: 75px;
@@ -15,7 +19,6 @@
     &:last-child{
       margin-right: 0;
     }
-    
   }
 
   svg{
