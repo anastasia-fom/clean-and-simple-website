@@ -1,0 +1,62 @@
+.header {
+  @media (min-width: $breakpoint_md) {
+    label {
+      display: none;
+    }
+  }
+
+  @media (min-width: $breakpoint_xs) {
+    .visible-xs {
+      display: none;
+    }
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    &__main-menu {
+      ul {
+        gap: 13px
+      }
+    }
+  }
+
+
+  @media (max-width: $breakpoint_md) {
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__menu {
+      justify-content: initial;
+    }
+
+    &__col {
+      width: initial;
+    }
+
+  }
+
+
+  @media (max-width: $breakpoint_xs) {
+
+    header{
+      &__main-menu{
+        ul {
+          li{
+            display: none;
+          }
+        }
+      }
+    }
+
+    &_cta {
+      display: none;
+    }
+
+    .visible-xs {
+      display: list-item;
+    }
+
+  }
+
+}
