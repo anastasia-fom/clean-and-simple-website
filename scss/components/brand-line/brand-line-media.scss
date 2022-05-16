@@ -1,5 +1,14 @@
-@media (max-width: $breakpoint_xs){
-  .brand-line{
+.brand-line{
 
+  @media(max-width: $breakpoint_xs){
+
+    .row{
+      justify-content: space-between;
+    }
+
+    svg{
+      max-width: 400px;
+      height: 100%;
+    }
   }
 }
