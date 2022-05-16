@@ -1,0 +1,10 @@
+.prototype{
+  @media (max-width: $breakpoint_md) {
+    .row{
+
+    }
+    &__item{
+      width: 100%;
+    }
+  }
+}
