@@ -1,10 +1,11 @@
 .prototype{
+
   @media (max-width: $breakpoint_md) {
     .row{
-
+      flex-wrap: wrap;
     }
     &__item{
-      width: 100%;
+      width: 100%!important;
     }
   }
 }

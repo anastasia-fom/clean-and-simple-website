@@ -43,6 +43,10 @@ body {
   flex-direction: column;
 }
 
+.justify-content-flex-start{
+  justify-content: flex-start;
+}
+
 .btn {
   @extend .link-unstyled;
   @extend %font-quicksand-bold;
