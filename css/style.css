@@ -78,17 +78,22 @@ body {
   font-weight: 500;
 }
 
+h2 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+}
+
 h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
 }
 
-.banner .highlight, .header__main-menu a {
+.prototype .btn.btn-disabled, .header__main-menu a, .highlight {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
 
-.header__main-menu a:hover, .btn {
+.prototype .btn.btn-disabled:active, .header__main-menu a:hover, .btn {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
 }
@@ -171,9 +176,19 @@ body {
   text-transform: uppercase;
 }
 
+.p-style {
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+
 h1 {
   font-size: 48px;
   text-align: center;
+  color: #3D4F9F;
+}
+
+h2 {
+  font-size: 36px;
   color: #3D4F9F;
 }
 
@@ -372,6 +387,55 @@ h1 {
     max-width: 400px;
     height: 100%;
   }
+}
+
+.prototype {
+  background-color: #F5F8FF;
+}
+.prototype__wrapper {
+  padding-top: 170px;
+}
+.prototype__description {
+  margin-top: 40px;
+  margin-bottom: 47px;
+}
+.prototype__subtitle {
+  margin-bottom: 26px;
+}
+.prototype__text {
+  max-width: 380px;
+  margin-top: 27px;
+}
+.prototype .btn {
+  text-shadow: none;
+  font-size: 14px;
+}
+.prototype .btn.btn-primary {
+  background-color: #4C85FF;
+  color: white;
+}
+.prototype .btn.btn-primary:hover {
+  background-color: #D2E1FF;
+  color: #3A79FF;
+}
+.prototype .btn.btn-primary:active {
+  background-color: #F5F8FF;
+  color: white;
+}
+.prototype .btn.btn-disabled {
+  background-color: #F5F8FF;
+  color: #ADB4D2;
+  border: 1px solid #D1D1E4;
+}
+.prototype .btn.btn-disabled:active {
+  background-color: #4C85FF;
+  color: white;
+}
+.prototype__item {
+  width: 50%;
+}
+.prototype__picture {
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

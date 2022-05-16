@@ -6,10 +6,6 @@
     justify-content: center;
   }
 
-  .highlight{
-    @extend %font-quicksand-medium;
-  }
-
   &__wrapper{
     padding-top: 100px;
   }

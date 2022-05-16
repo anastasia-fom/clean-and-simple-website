@@ -1,0 +1,64 @@
+.prototype{
+  background-color: $background-color;
+
+  &__wrapper{
+    padding-top: 170px;
+  }
+
+  &__description{
+    margin-top: 40px;
+    margin-bottom: 47px;
+  }
+
+  &__subtitle{
+    margin-bottom: 26px;
+  }
+  &__text{
+    max-width: 380px;
+    margin-top: 27px;
+  }
+
+  .btn{
+    text-shadow: none;
+    font-size: $font-size_sm;
+
+
+    &.btn-primary {
+      background-color: $background-color-btn;
+      color: white;
+
+
+      &:hover {
+        background-color: $sub_menu_bg;
+        color: $btn-text-color;
+      }
+
+      &:active {
+        background-color: $background-color;;
+        color: white;
+      }
+    }
+
+    &.btn-disabled{
+      @extend %font-quicksand-medium;
+      background-color: $background-color;
+      color: #ADB4D2;
+      border: 1px solid $border-color-btn;
+
+      &:active {
+        @extend %font-quicksand-bold;
+        background-color: $background-color-btn;
+        color: white;
+      }
+    }
+  }
+
+  &__item{
+    width: 50%;
+  }
+
+  &__picture{
+    max-width: 100%;
+  }
+
+}

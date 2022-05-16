@@ -80,10 +80,25 @@ body {
   text-transform: uppercase;
 }
 
+.highlight{
+  @extend %font-quicksand-medium;
+}
+
+.p-style{
+  line-height: 29px;
+  letter-spacing: 0.03em;
+}
+
 h1{
   @extend %font-quicksand-light;
   font-size: $font-size_2xl;
   text-align: center;
+  color: $text-color_subtitle;
+}
+
+h2{
+  @extend %font-quicksand-regular;
+  font-size: $font-size_xl;
   color: $text-color_subtitle;
 }
 
