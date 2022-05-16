@@ -106,5 +106,11 @@ h2{
   color: $text-color_subtitle;
 }
 
+h3{
+  @extend %font-quicksand-medium;
+  font-size: $font-size_lg;
+  color: $text-color_subtitle;
+}
+
 
 

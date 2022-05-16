@@ -88,7 +88,7 @@ h1 {
   font-weight: 300;
 }
 
-.prototype .btn.btn-disabled, .header__main-menu a, .highlight {
+.prototype .btn.btn-disabled, .header__main-menu a, h3, .highlight {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
@@ -193,6 +193,11 @@ h1 {
 
 h2 {
   font-size: 36px;
+  color: #3D4F9F;
+}
+
+h3 {
+  font-size: 24px;
   color: #3D4F9F;
 }
 
