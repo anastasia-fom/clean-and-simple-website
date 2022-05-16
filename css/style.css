@@ -95,6 +95,7 @@ h1 {
 
 .banner {
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 body {
@@ -289,13 +290,40 @@ h1 {
   justify-content: center;
 }
 .banner__wrapper {
-  padding-top: 60px;
-  padding-bottom: 500px;
+  padding-top: 100px;
+}
+.banner__description {
+  margin-bottom: 250px;
+}
+.banner__subtitle {
+  margin-bottom: 20px;
 }
 .banner__text {
   stroke: #DFE2EF;
   width: 502px;
   align-self: center;
+  margin-top: 30px;
+}
+.banner__slider {
+  margin-bottom: 30px;
+}
+.banner__slider input[type=radio] {
+  display: none;
+}
+.banner__slider-navigation:last-child {
+  margin-right: 0;
+}
+.banner__slider label {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-color: #CDD3E4;
+}
+.banner__slider label:hover {
+  background-color: #5282FF;
 }
 
 .brand-line .row {

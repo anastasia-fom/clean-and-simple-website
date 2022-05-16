@@ -11,14 +11,51 @@
   }
 
   &__wrapper{
-    padding-top: 60px; // проверить
-    padding-bottom: 500px; // проверить кыць-кыць-кыць-кыця
+    padding-top: 100px;
+  }
+
+  &__description{
+    margin-bottom: 250px;
+  }
+
+  &__subtitle{
+    margin-bottom: 20px;
   }
 
   &__text{
     stroke: $text-color-stroke;
     width: 502px;
     align-self: center;
+    margin-top: 30px;
   }
+
+  &__slider {
+    margin-bottom: 30px;
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    &-navigation:last-child{
+      margin-right: 0;
+    }
+
+    label {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      border-radius: 50%;
+      margin-right: 0.5em;
+      background-color: $slider-color;
+    }
+
+    label:hover{
+      background-color: $slider-color-cheked;
+    }
+  }
+
+
+
 
 }
