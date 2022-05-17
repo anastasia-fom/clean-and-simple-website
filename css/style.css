@@ -453,11 +453,19 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  .prototype .row {
+  .prototype__wrapper {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+  .prototype__content {
     flex-wrap: wrap;
   }
   .prototype__item {
-    width: 100% !important;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .prototype__text {
+    max-width: 100%;
   }
 }
 
