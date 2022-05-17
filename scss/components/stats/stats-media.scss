@@ -1,0 +1,32 @@
+.stats{
+
+  @media (max-width: $breakpoint_xs) {
+    &__col{
+      width: 100%;
+    }
+
+    &__col-wrapper{
+      align-items: center;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    &__productivity{
+      background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+      padding-right: 0;
+      &:before{
+        display: none;
+      }
+    }
+
+    &__application{
+      background:linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+      padding-left: 0;
+      &:before{
+        display: none;
+      }
+    }
+  }
+}

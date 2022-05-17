@@ -1,0 +1,87 @@
+.stats{
+  $col-padding: 90px;
+  $section-color: #5E80FF;
+  @extend %font-quicksand-medium;
+  font-size: $font_size_md;
+  overflow-x: hidden;
+
+  color: white;
+
+  &__col {
+    width: 50%;
+    padding: 66px 0;
+    position: relative;
+
+    &-wrapper {
+      max-width: 260px;
+      z-index: 10;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      width: 100vw;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  h2{
+    @extend %font-quicksand-regular;
+  }
+
+
+  &__productivity {
+    padding-right: $col-padding;
+
+    p {
+      text-align: right;
+    }
+
+    h2{
+      color: white;
+    }
+
+    &:before {
+      background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+      right: 0;
+      z-index: 1;
+    }
+  }
+
+  &__application {
+    padding-left: $col-padding;
+    color: $section-color;
+
+    h2{
+      color:$section-color;
+    }
+
+    &:before {
+      background:linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &__icon {
+    @extend %background-image-bg;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    font-size: 48px;
+  }
+
+  &__productivity-icon {
+    background-image: url("../../../assets/icons/productivity.svg");
+  }
+
+  &__application-icon {
+    background-image: url("../../../assets/icons/users.svg");
+  }
+}
