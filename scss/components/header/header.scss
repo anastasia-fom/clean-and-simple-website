@@ -30,6 +30,12 @@
     }
   }
 
+  &__navbar{
+    #toggler , label{
+      display: none;
+    }
+  }
+
   &__main-menu {
     ul {
       gap: 43px;
@@ -44,6 +50,7 @@
         }
       }
     }
+
 
     a {
       @include a-style('color', $text-color, $accent-color, $active-color);

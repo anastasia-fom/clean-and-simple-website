@@ -255,6 +255,9 @@ h3 {
   background-color: #242C50;
   transition: 0.3s;
 }
+.header__navbar #toggler, .header__navbar label {
+  display: none;
+}
 .header__main-menu ul {
   gap: 43px;
 }
@@ -316,10 +319,64 @@ h3 {
     width: initial;
   }
 }
-@media (max-width: 480px) {
-  .header header__main-menu ul li {
-    display: none;
+@media (max-width: 576px) {
+  .header__navbar label {
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
   }
+  .header__navbar .menu-btn {
+    margin-left: 30px;
+  }
+  .header__navbar .menu-btn,
+.header__navbar .menu-btn::before,
+.header__navbar .menu-btn::after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #5E81FE;
+  }
+  .header__navbar .menu-btn::before,
+.header__navbar .menu-btn::after {
+    content: "";
+  }
+  .header__navbar .menu-btn::before {
+    transform: translateY(-5px);
+  }
+  .header__navbar .menu-btn::after {
+    transform: translateY(5px);
+  }
+  .header__navbar #toggler:checked ~ .header__main-menu {
+    max-height: 100%;
+  }
+  .header__navbar #toggler:checked ~ .header__main-menu ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: #D2E1FF;
+  }
+  .header__navbar #toggler:checked ~ .header__main-menu li {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .header__navbar #toggler:checked ~ .header__main-menu a {
+    color: #5E81FE;
+    font-size: 18px;
+  }
+  .header__main-menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .header__main-menu .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) and (max-width: 480px) {
   .header_cta {
     display: none;
   }
