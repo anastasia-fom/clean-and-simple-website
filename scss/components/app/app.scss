@@ -1,0 +1,64 @@
+.app{
+  background-image: url('../../../assets/pictures/features.svg');
+
+  &__wrapper{
+    padding-top: 170px;
+    padding-bottom: 170px;
+  }
+
+  .row{
+    justify-content: center;
+  }
+
+  h3{
+    margin-top: 20px;
+  }
+
+  &__item{
+    width: calc(100%/4);
+
+    img{
+      max-width: 69px;
+    }
+
+    h4{
+      margin-top: 33px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__sections{
+    margin-top: 90px;
+
+    p{
+      max-width: 160px;
+    }
+
+    .line{
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  &__button{
+    margin-top: 92px;
+
+    .line{
+      margin-right: 17px;
+      margin-left: 16px;
+    }
+    .btn-accent{
+      background-color: $second-bacground-color;
+      color: $second-text-color;
+
+      &:hover{
+        background-color:$second-text-color;
+        color: white;
+      }
+    }
+    .btn-primary{
+      text-shadow: none;
+    }
+  }
+
+}
