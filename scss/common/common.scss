@@ -63,6 +63,10 @@ body {
   justify-content: center;
 }
 
+.justify-content-between{
+  justify-content: space-between;
+}
+
 .btn {
   @extend .link-unstyled;
   @extend %font-quicksand-bold;

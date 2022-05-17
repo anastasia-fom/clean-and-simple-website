@@ -1,6 +1,11 @@
 .stats{
 
   @media (max-width: $breakpoint_xs) {
+
+    .row{
+      flex-direction: column;
+    }
+
     &__col{
       width: 100%;
     }
