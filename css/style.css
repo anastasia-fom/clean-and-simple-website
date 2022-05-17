@@ -529,4 +529,23 @@ h3 {
   text-shadow: none;
 }
 
+@media (max-width: 480px) {
+  .app__wrapper {
+    padding-top: 60px;
+  }
+  .app__sections {
+    flex-direction: column;
+  }
+  .app__sections .line {
+    display: none;
+  }
+  .app__item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .app__item p {
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
