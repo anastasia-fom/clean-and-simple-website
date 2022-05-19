@@ -1,6 +1,12 @@
 .prototype{
 
   @media (max-width: $breakpoint_md) {
+
+    &__picture {
+      width: 100%;
+      margin-right: 0;
+    }
+
     &__wrapper{
       padding-top: 0;
       padding-bottom: 100px;
