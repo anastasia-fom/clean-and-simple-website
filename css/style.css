@@ -699,9 +699,11 @@ h3 {
   }
   .stats__col {
     width: 100%;
+    justify-content: center;
   }
   .stats__col-wrapper {
     align-items: center;
+    justify-content: center;
   }
   .stats p {
     text-align: center;

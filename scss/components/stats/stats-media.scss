@@ -8,10 +8,12 @@
 
     &__col{
       width: 100%;
+      justify-content: center;
     }
 
     &__col-wrapper{
       align-items: center;
+      justify-content: center;
     }
 
     p{
