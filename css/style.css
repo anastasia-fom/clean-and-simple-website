@@ -465,20 +465,30 @@ h3 {
 }
 .brand-line svg {
   fill: #B6BAC7;
-  max-width: 120px;
+  width: 120px;
   height: 100%;
 }
 .brand-line svg:hover {
   fill: #5982E7;
 }
 
-@media (max-width: 480px) {
-  .brand-line .row {
-    justify-content: space-between;
+@media (max-width: 767px) {
+  .brand-line__wrapper {
+    padding: 20px 0;
+  }
+  .brand-line ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
   .brand-line svg {
-    max-width: 400px;
-    height: 100%;
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .brand-line svg {
+    width: 100px;
   }
 }
 
