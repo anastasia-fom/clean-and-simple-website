@@ -8,5 +8,19 @@
         width: 100%;
       }
     }
+
+    &__description{
+      margin-left: 20px;
+    }
+
+    .btn{
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: $breakpoint_xs) {
+    .arrow-l, .arrow-r{
+      display: none;
+    }
   }
 }
