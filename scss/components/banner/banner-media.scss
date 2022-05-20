@@ -4,15 +4,6 @@
     &__wrapper{
       padding-top: 50px;
     }
-
-    &__description {
-      margin-bottom: 100px;
-    }
   }
 
-  @media (max-width: $breakpoint_xs) {
-    &__description {
-      margin-bottom: 70px;
-    }
-  }
 }

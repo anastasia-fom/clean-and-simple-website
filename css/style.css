@@ -225,7 +225,6 @@ h3 {
 .header {
   width: 100%;
   background-color: white;
-  border-bottom: 2px solid #D8E3FE;
 }
 .header__wrapper {
   padding: 32px 0;
@@ -392,16 +391,13 @@ h3 {
 }
 
 .banner {
-  background-image: url("../../../assets/pictures/hero-image.jpg");
+  background-image: url("../../../assets/pictures/hero-image.svg");
+  background-size: cover;
+  padding-top: 100px;
+  height: calc(100vh - 85px);
 }
 .banner .row {
   justify-content: center;
-}
-.banner__wrapper {
-  padding-top: 100px;
-}
-.banner__description {
-  margin-bottom: 250px;
 }
 .banner__subtitle {
   margin-bottom: 20px;
@@ -411,6 +407,25 @@ h3 {
   max-width: 502px;
   align-self: center;
   margin-top: 30px;
+}
+.banner__play {
+  margin-top: 20px;
+  margin-bottom: 140px;
+}
+.banner__play a {
+  cursor: pointer;
+  width: 52px;
+  height: 52px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 10px 50px rgb(201, 209, 231);
+}
+.banner__play a:hover {
+  background-color: #6888FF;
+  transition: 0.3s;
+}
+.banner__play a:hover path {
+  fill: #E9EFFF;
 }
 .banner__slider {
   margin-bottom: 30px;
@@ -424,8 +439,8 @@ h3 {
 .banner__slider label {
   content: "";
   display: inline-block;
-  width: 1em;
-  height: 1em;
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 50%;
   margin-right: 0.5em;
   background-color: #CDD3E4;
@@ -437,14 +452,6 @@ h3 {
 @media (max-width: 1024px) {
   .banner__wrapper {
     padding-top: 50px;
-  }
-  .banner__description {
-    margin-bottom: 100px;
-  }
-}
-@media (max-width: 480px) {
-  .banner__description {
-    margin-bottom: 70px;
   }
 }
 
