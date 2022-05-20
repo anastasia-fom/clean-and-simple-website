@@ -415,6 +415,9 @@ h3 {
   margin-top: 20px;
   margin-bottom: 140px;
 }
+.banner__play svg {
+  fill: #5E81FF;
+}
 .banner__play a {
   cursor: pointer;
   width: 52px;
