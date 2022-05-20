@@ -29,6 +29,12 @@
     text-shadow: none;
     font-size: $font-size_sm;
 
+    &-play{
+      img{
+        margin-left: 6px;
+        margin-top: 5px;
+      }
+    }
 
     &.btn-primary {
       background-color: $background-color-btn;

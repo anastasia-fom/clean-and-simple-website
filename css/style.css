@@ -543,6 +543,10 @@ h3 {
   text-shadow: none;
   font-size: 14px;
 }
+.prototype .btn-play img {
+  margin-left: 6px;
+  margin-top: 5px;
+}
 .prototype .btn.btn-primary {
   background-color: #4C85FF;
   color: white;
