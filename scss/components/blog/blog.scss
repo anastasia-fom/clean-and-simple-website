@@ -2,34 +2,14 @@
   background-color: $background-color;
 
   &__wrapper{
-    padding-top: 104px;
-    padding-bottom: 104px;
+    padding: 104px 0;
   }
 
   h2{
     margin-top: 20px;
   }
 
-  .arrow-l{
-    margin-right: 75px;
-
-    svg{
-      stroke: #A8B4E5;
-    }
-      a {
-        cursor: pointer;
-
-        &:hover {
-          svg {
-            stroke: #6888FF;
-          }
-        }
-    }
-  }
-
-  .arrow-r{
-    margin-left: 75px;
-
+  .arrow{
     svg{
       stroke: #A8B4E5;
     }
@@ -38,21 +18,24 @@
 
       &:hover {
         svg {
-          stroke: #6888FF;
+          stroke: $stroke-color;
         }
       }
     }
   }
 
+  .arrow-l{
+    margin-right: 75px;
+  }
+
+  .arrow-r{
+    margin-left: 75px;
+  }
+
   &__content{
     background-color: white;
-    padding-top: 64px;
-    padding-bottom: 64px;
-
-    padding-right: 41px;
-
-    margin-top: 62px;
-    margin-bottom: 100px;
+    padding: 64px 41px 64px 0;
+    margin: 62px 0 100px 0;
 
     &-item{
       width: 50%;
@@ -61,8 +44,7 @@
 
   &__pictures-item1 {
     width: 70%;
-    margin-left: 35px;
-    margin-right: 12px;
+    margin: 0 12px 0 35px;
     position: relative;
 
     img{
@@ -113,12 +95,10 @@
   }
 
   &__description{
-    margin-left: 67px;
-    margin-top: -35px;
+    margin: -35px 0 0 67px;
     p{
       max-width: 415px;
-      margin-top: 32px;
-      margin-bottom: 32px;
+      margin: 32px 0;
     }
   }
 

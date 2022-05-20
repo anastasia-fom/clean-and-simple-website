@@ -94,7 +94,6 @@ body {
       transition: $transition;
     }
   }
-
 }
 
 .subtitle{
@@ -111,6 +110,10 @@ body {
 .p-style{
   line-height: 29px;
   letter-spacing: 0.03em;
+}
+
+a{
+  text-decoration: none;
 }
 
 h1{

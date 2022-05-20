@@ -6,10 +6,6 @@
     padding: 57px 0 93px 0;
   }
 
-  .row {
-    justify-content: space-between;
-  }
-
   &__col {
     width: 50%;
 
@@ -18,14 +14,9 @@
     }
   }
 
-  &__menu {
-    justify-content: space-between;
-  }
-
   &__logo {
     a {
       @include a-style('bg', $accent-color, $hover-color, $active-color);
-      text-decoration: none;
       display: inline-block;
       width: 26px;
       height: 26px;
@@ -63,29 +54,16 @@
   }
 
   &__social {
-    justify-content: flex-end;
     gap: 45px;
 
     ul {
       gap: 35px
     }
 
-    svg {
-      fill: #B6BAC7;
-
-      &:hover {
-        fill: #6188FF;
-      }
-    }
+    @include svg_style(#B6BAC7, #6188FF);
 
     .m_logo{
-      svg{
-        fill:#757E9A;
-
-        &:hover {
-          fill: #6188FF;
-        }
-      }
+      @include svg_style(#757E9A, #6188FF);
     }
   }
 }

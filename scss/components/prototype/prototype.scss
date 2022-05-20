@@ -1,18 +1,12 @@
 .prototype{
   background-color: $background-color;
 
-  .row{
-    justify-content: flex-start;
-  }
-
   &__wrapper{
-    padding-top: 170px;
-    padding-bottom: 170px;
+    padding: 170px 0;
   }
 
   &__description{
-    margin-top: 40px;
-    margin-bottom: 47px;
+    margin: 40px 0 47px 0;
   }
 
   &__subtitle{
@@ -31,42 +25,27 @@
 
     &-play{
       img{
-        margin-left: 6px;
-        margin-top: 5px;
+        margin: 5px 0 0 6px;
       }
     }
 
     &.btn-primary {
-      background-color: $background-color-btn;
-      color: white;
-
-
-      &:hover {
-        background-color: $sub_menu_bg;
-        color: $btn-text-color;
-      }
+      @include btn-action-background($background-color-btn,$sub_menu_bg, $background-color);
+      @include btn-action-text(white,$btn-text-color,#D1D1E4);
 
       &:active {
-        background-color: $background-color;;
-        color: white;
+        border: 1px solid #D1D1E4;
       }
     }
 
     &.btn-disabled{
       @extend %font-quicksand-medium;
-      background-color: $background-color;
-      color: #ADB4D2;
+      @include btn-action-background($background-color,$sub_menu_bg, $btn-text-color);
+      @include btn-action-text(#ADB4D2,$btn-text-color,white);
       border: 1px solid $border-color-btn;
-
-      &:hover {
-        background-color: $sub_menu_bg;
-        color: $btn-text-color;
-      }
 
       &:active {
         @extend %font-quicksand-bold;
-        background-color: $background-color-btn;
-        color: white;
       }
     }
   }
@@ -80,5 +59,4 @@
     margin-right: -400px;
     box-shadow: 0 100px 150px #F2F6FF;
   }
-
 }

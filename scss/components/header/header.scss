@@ -53,7 +53,6 @@
       }
     }
 
-
     a {
       @include a-style('color', $text-color, $accent-color, $active-color);
       @extend %font-quicksand-medium;
@@ -73,22 +72,10 @@
     ul {
       gap: 35px;
 
-      svg {
-        fill: #B6BAC7;
-
-        &:hover {
-          fill: #6188FF;
-        }
-      }
+      @include svg_style(#B6BAC7, #6188FF);
 
       .m_logo{
-        svg{
-          fill:#757E9A;
-
-          &:hover {
-            fill: #6188FF;
-          }
-        }
+        @include svg_style(#757E9A, #6188FF);
       }
     }
   }

@@ -2,8 +2,7 @@
   background-image: url('../../../assets/pictures/features.svg');
 
   &__wrapper{
-    padding-top: 170px;
-    padding-bottom: 170px;
+    padding: 170px 0;
   }
 
   .row{
@@ -19,11 +18,11 @@
 
     img{
       max-width: 69px;
+      width: 100%;
     }
 
     h4{
-      margin-top: 33px;
-      margin-bottom: 25px;
+      margin: 33px 0 25px 0;
     }
   }
 
@@ -32,11 +31,11 @@
 
     p{
       max-width: 160px;
+      @extend %font-open-sans-semi-bold;
     }
 
     .line{
-      margin-right: 20px;
-      margin-left: 20px;
+      margin: 0 20px;
     }
   }
 
@@ -44,21 +43,16 @@
     margin-top: 92px;
 
     .line{
-      margin-right: 17px;
-      margin-left: 16px;
+      margin: 0 17px 0 16px;
     }
-    .btn-accent{
-      background-color: $second-bacground-color;
-      color: $second-text-color;
 
-      &:hover{
-        background-color:$second-text-color;
-        color: white;
-      }
+    .btn-accent{
+      @include btn-action-background($second-bacground-color,$second-text-color, #7D3030);
+      @include btn-action-text($second-text-color,white,white);
     }
+
     .btn-primary{
       text-shadow: none;
     }
   }
-
 }

@@ -26,3 +26,50 @@
     transition: $transition;
   }
 }
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin svg_style($fill-color, $fill-color-hover) {
+  svg {
+    fill: $fill-color;
+
+    &:hover {
+      fill: $fill-color-hover;
+    }
+  }
+}
+
+@mixin btn-action-background($main-color-btn, $hover-color-btn, $active-color-btn){
+  background-color:$main-color-btn;
+
+  &:hover{
+    background-color: $hover-color-btn;
+  }
+
+  &:active{
+    background-color: $active-color-btn;
+  }
+}
+
+@mixin btn-action-text($main-color-text, $hover-color-text, $active-color-text){
+  color: $main-color-text;
+
+  &:hover{
+    color:$hover-color-text;
+  }
+
+  &:active{
+    color: $active-color-text;
+  }
+}

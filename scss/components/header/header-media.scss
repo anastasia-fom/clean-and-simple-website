@@ -21,6 +21,7 @@
 
 
   @media (max-width: $breakpoint_md) {
+    position: absolute;
 
     &__menu {
       flex-direction: row-reverse;

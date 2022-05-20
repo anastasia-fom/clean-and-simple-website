@@ -18,11 +18,9 @@
     }
 
     &:before {
-      content: '';
-      display: block;
+      @include pseudo();
       width: 100vw;
       height: 100%;
-      position: absolute;
       top: 0;
     }
   }
@@ -31,6 +29,9 @@
     @extend %font-quicksand-regular;
   }
 
+  p{
+    @extend %font-quicksand-medium;
+  }
 
   &__productivity {
     padding-right: $col-padding;

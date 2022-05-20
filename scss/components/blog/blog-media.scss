@@ -16,6 +16,10 @@
     .btn{
       margin-top: 10px;
     }
+
+    .arrow {
+      display: none;
+    }
   }
 
   @media (max-width: $breakpoint_sm) {
@@ -34,9 +38,6 @@
       }
     }
 
-    .arrow-l, .arrow-r{
-      display: none;
-    }
   }
 
   @media (max-width: $breakpoint_xs) {
@@ -48,8 +49,16 @@
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      margin-left: 35px;
-      margin-top: 13px;
+      margin: 13px 0 0 35px ;
+    }
+
+    .blog__content {
+      padding-right: 10px;
+      margin-bottom: 25px;
+
+      p{
+        width: 260px;
+      }
     }
   }
 }
