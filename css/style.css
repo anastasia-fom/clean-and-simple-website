@@ -564,6 +564,10 @@ h3 {
   color: #ADB4D2;
   border: 1px solid #D1D1E4;
 }
+.prototype .btn.btn-disabled:hover {
+  background-color: #D2E1FF;
+  color: #3A79FF;
+}
 .prototype .btn.btn-disabled:active {
   background-color: #4C85FF;
   color: white;

@@ -58,6 +58,11 @@
       color: #ADB4D2;
       border: 1px solid $border-color-btn;
 
+      &:hover {
+        background-color: $sub_menu_bg;
+        color: $btn-text-color;
+      }
+
       &:active {
         @extend %font-quicksand-bold;
         background-color: $background-color-btn;
