@@ -548,7 +548,7 @@ h3 {
   box-shadow: 0 100px 150px #F2F6FF;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .prototype__picture {
     width: 100%;
     margin-right: 0;
@@ -566,7 +566,7 @@ h3 {
     margin-top: 20px;
   }
   .prototype__text {
-    width: 100%;
+    max-width: 100%;
   }
 }
 

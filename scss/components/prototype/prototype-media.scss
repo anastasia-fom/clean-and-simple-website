@@ -1,6 +1,6 @@
 .prototype{
 
-  @media (max-width: $breakpoint_md) {
+  @media (max-width: $breakpoint_lg) {
 
     &__picture {
       width: 100%;
@@ -11,6 +11,7 @@
       padding-top: 0;
       padding-bottom: 100px;
     }
+
     &__content{
       flex-direction: column;
       flex-wrap: wrap;
@@ -22,7 +23,7 @@
     }
 
     &__text{
-      width: 100%;
+      max-width: 100%;
     }
   }
 
