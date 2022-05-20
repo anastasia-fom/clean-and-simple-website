@@ -18,9 +18,38 @@
     }
   }
 
-  @media (max-width: $breakpoint_xs) {
+  @media (max-width: $breakpoint_sm) {
+
+    &__pictures-item1{
+      img{
+        max-width: 240px;
+        height: 240px;
+      }
+    }
+
+    &__pictures-item2{
+      img{
+        max-width: 112px;
+        height: 112px;
+      }
+    }
+
     .arrow-l, .arrow-r{
       display: none;
+    }
+  }
+
+  @media (max-width: $breakpoint_xs) {
+    &__content-item{
+      flex-direction: column;
+    }
+
+    &__pictures-item2{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: 35px;
+      margin-top: 13px;
     }
   }
 }
