@@ -1,5 +1,6 @@
 .banner{
   @media (max-width: $breakpoint_lg) {
+    height: 100%;
 
     &__wrapper{
       padding-top: 50px;

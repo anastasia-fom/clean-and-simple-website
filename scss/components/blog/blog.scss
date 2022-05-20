@@ -39,6 +39,10 @@
     margin-right: 12px;
   }
 
+  &__search{
+    position: absolute;
+  }
+
   &__pictures-item2{
     width: 33%;
 
@@ -74,8 +78,8 @@
     label {
       content: '';
       display: inline-block;
-      width: 1em;
-      height: 1em;
+      width: 0.5em;
+      height: 0.5em;
       border-radius: 50%;
       margin-right: 0.5em;
       background-color: $slider-color;
