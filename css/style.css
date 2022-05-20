@@ -918,12 +918,18 @@ h3 {
   .footer__col {
     width: 100%;
   }
+  .footer__col p {
+    font-size: 13px;
+  }
   .footer__main-menu {
     margin-left: 10px;
   }
   .footer__main-menu ul {
     flex-direction: row;
-    gap: 10px;
+    gap: 15px;
+  }
+  .footer__main-menu ul a {
+    font-size: 13px;
   }
   .footer__social {
     justify-content: center;

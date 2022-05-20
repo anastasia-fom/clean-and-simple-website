@@ -23,13 +23,22 @@
 
     &__col{
       width: 100%;
+
+      p{
+        font-size: $font-size_xs;
+      }
     }
 
     &__main-menu{
       margin-left: 10px;
+
       ul{
         flex-direction: row;
-        gap: 10px;
+        gap: 15px;
+
+        a{
+          font-size: $font-size_xs;
+        }
       }
     }
 
