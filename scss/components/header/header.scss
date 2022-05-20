@@ -32,8 +32,8 @@
     }
   }
 
-  &__navbar{
-    #toggler , label{
+  &__navbar {
+    #toggler, label {
       display: none;
     }
   }
@@ -58,7 +58,8 @@
       @include a-style('color', $text-color, $accent-color, $active-color);
       @extend %font-quicksand-medium;
       text-decoration: none;
-      &:hover{
+
+      &:hover {
         @extend %font-quicksand-bold;
       }
     }
@@ -71,15 +72,24 @@
 
     ul {
       gap: 35px;
-    }
 
-    svg{
-      fill: #B6BAC7;
+      svg {
+        fill: #B6BAC7;
 
-      &:hover{
-        fill: #6188FF;
+        &:hover {
+          fill: #6188FF;
+        }
       }
 
+      .m_logo{
+        svg{
+          fill:#757E9A;
+
+          &:hover {
+            fill: #6188FF;
+          }
+        }
+      }
     }
   }
 }

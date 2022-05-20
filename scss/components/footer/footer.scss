@@ -70,11 +70,21 @@
       gap: 35px
     }
 
-    svg{
+    svg {
       fill: #B6BAC7;
 
-      &:hover{
+      &:hover {
         fill: #6188FF;
+      }
+    }
+
+    .m_logo{
+      svg{
+        fill:#757E9A;
+
+        &:hover {
+          fill: #6188FF;
+        }
       }
     }
   }

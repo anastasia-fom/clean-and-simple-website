@@ -288,10 +288,16 @@ h3 {
 .header__social ul {
   gap: 35px;
 }
-.header__social svg {
+.header__social ul svg {
   fill: #B6BAC7;
 }
-.header__social svg:hover {
+.header__social ul svg:hover {
+  fill: #6188FF;
+}
+.header__social ul .m_logo svg {
+  fill: #757E9A;
+}
+.header__social ul .m_logo svg:hover {
   fill: #6188FF;
 }
 
@@ -986,6 +992,12 @@ h3 {
   fill: #B6BAC7;
 }
 .footer__social svg:hover {
+  fill: #6188FF;
+}
+.footer__social .m_logo svg {
+  fill: #757E9A;
+}
+.footer__social .m_logo svg:hover {
   fill: #6188FF;
 }
 
