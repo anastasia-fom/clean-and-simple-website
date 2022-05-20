@@ -1,0 +1,46 @@
+.footer {
+  
+  @media (max-width: $breakpoint_md) {
+    &__logo{
+      align-items: flex-start;
+    }
+    &__main-menu ul{
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__social ul{
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: $breakpoint_xs) {
+
+   .row{
+     justify-content: center;
+     flex-direction: column;
+   }
+
+    &__col{
+      width: 100%;
+    }
+
+    &__main-menu{
+      margin-left: 10px;
+      ul{
+        flex-direction: row;
+        gap: 10px;
+      }
+    }
+
+    &__social{
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    &__social ul{
+      flex-direction: row;
+    }
+
+  }
+}
