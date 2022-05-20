@@ -754,9 +754,6 @@ h3 {
 
 .blog {
   background-color: #F5F8FF;
-  /*&__search{
-    position: absolute;
-  }*/
 }
 .blog__wrapper {
   padding-top: 104px;
@@ -786,6 +783,28 @@ h3 {
   width: 70%;
   margin-left: 35px;
   margin-right: 12px;
+  position: relative;
+}
+.blog__search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+.blog__search a {
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  background-color: white;
+  border-radius: 50%;
+}
+.blog__search a:hover {
+  background-color: #D2E1FF;
+  box-shadow: 0 10px 50px rgb(201, 209, 231);
+  transition: 0.3s;
+}
+.blog__search a:hover path {
+  fill: #E9EFFF;
 }
 .blog__pictures-item2 {
   width: 33%;
