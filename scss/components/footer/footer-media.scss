@@ -33,7 +33,6 @@
       margin-left: 10px;
 
       ul{
-        flex-direction: row;
         gap: 15px;
 
         a{
@@ -49,6 +48,10 @@
 
     &__social ul{
       flex-direction: row;
+    }
+
+    .btn{
+      text-align: center;
     }
 
   }
