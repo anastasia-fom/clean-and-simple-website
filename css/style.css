@@ -103,7 +103,7 @@ h1 {
   font-weight: bold;
 }
 
-.stats__icon, .banner {
+.started, .stats__icon, .banner {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -945,6 +945,11 @@ h3 {
   .blog .blog__content p {
     width: 260px;
   }
+}
+
+.started {
+  background-image: url("../assets/pictures/content.svg");
+  background-size: cover;
 }
 
 .footer {

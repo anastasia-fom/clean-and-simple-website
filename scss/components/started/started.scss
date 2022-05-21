@@ -1,0 +1,5 @@
+.started{
+  @extend %background-image-bg;
+  background-image: url('../assets/pictures/content.svg');
+  background-size: cover;
+}
