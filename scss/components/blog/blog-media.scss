@@ -1,5 +1,11 @@
 .blog{
-  
+  @media (max-width: $breakpoint_lg) {
+    .arrow{
+      display: none;
+    }
+
+  }
+
   @media (max-width: $breakpoint_md) {
     &__content{
       flex-direction: column;
@@ -15,10 +21,6 @@
 
     .btn{
       margin-top: 10px;
-    }
-
-    .arrow {
-      display: none;
     }
   }
 
