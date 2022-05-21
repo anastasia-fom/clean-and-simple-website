@@ -412,7 +412,7 @@ h3 {
 }
 
 .banner {
-  background-image: url("../../../assets/pictures/hero-image.svg");
+  background-image: url("../assets/pictures/hero-image.svg");
   background-size: cover;
   padding-top: 100px;
   height: calc(100vh - 85px);
@@ -614,7 +614,7 @@ h3 {
 }
 
 .app {
-  background-image: url("../../../assets/pictures/features.svg");
+  background-image: url("../assets/pictures/features.svg");
 }
 .app__wrapper {
   padding: 170px 0;
@@ -757,10 +757,10 @@ h3 {
   font-size: 48px;
 }
 .stats__productivity-icon {
-  background-image: url("../../../assets/icons/productivity.svg");
+  background-image: url("../assets/icons/productivity.svg");
 }
 .stats__application-icon {
-  background-image: url("../../../assets/icons/users.svg");
+  background-image: url("../assets/icons/users.svg");
 }
 
 @media (max-width: 480px) {
@@ -1023,10 +1023,12 @@ h3 {
     align-items: flex-start;
   }
   .footer__main-menu ul {
+    display: flex;
     flex-direction: column;
     gap: 12px;
   }
   .footer__social ul {
+    display: flex;
     flex-direction: column;
   }
 }

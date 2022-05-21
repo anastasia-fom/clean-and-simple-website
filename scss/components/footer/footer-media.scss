@@ -5,14 +5,19 @@
       align-items: flex-start;
     }
 
-
-    &__main-menu ul{
-      flex-direction: column;
-      gap: 12px;
+    &__main-menu {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
     }
 
-    &__social ul{
-      flex-direction: column;
+    &__social{
+      ul{
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 
