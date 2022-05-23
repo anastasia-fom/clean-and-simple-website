@@ -2,4 +2,50 @@
   @extend %background-image-bg;
   background-image: url('../assets/pictures/content.svg');
   background-size: cover;
+  color: white;
+
+  padding: 91px 0;
+
+  &__description{
+    margin-bottom: 50px;
+  }
+
+  &__subtitle{
+    color: white;
+  }
+
+  h3{
+    @extend %font-quicksand-light;
+    font-size: $font-size_2xl;
+    color: white;
+  }
+
+  &__text{
+    max-width: 700px;
+    width: 100%;
+    margin-top: 28px;
+  }
+
+  .btn {
+    text-shadow: none;
+  }
+
+  .btn-primary{
+    @include btn-action-background(white, $sub_menu_bg, transparent);
+    @include btn-action-text(#565F82, $btn-text-color, #C7D3FF);
+
+    &:active{
+      border: 1px solid #A0B4FF;
+    }
+  }
+
+  .btn-disabled{
+    @include btn-action-background(transparent,$sub_menu_bg, white);
+    @include btn-action-text(#C7D3FF,$btn-text-color,#565F82);
+    border: 1px solid #A0B4FF;
+
+    &:active{
+      border: none;
+    }
+  }
 }

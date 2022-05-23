@@ -88,7 +88,7 @@ body {
   font-weight: normal;
 }
 
-h1 {
+.started h3, h1 {
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
 }
@@ -950,6 +950,65 @@ h3 {
 .started {
   background-image: url("../assets/pictures/content.svg");
   background-size: cover;
+  color: white;
+  padding: 91px 0;
+}
+.started__description {
+  margin-bottom: 50px;
+}
+.started__subtitle {
+  color: white;
+}
+.started h3 {
+  font-size: 48px;
+  color: white;
+}
+.started__text {
+  max-width: 700px;
+  width: 100%;
+  margin-top: 28px;
+}
+.started .btn {
+  text-shadow: none;
+}
+.started .btn-primary {
+  background-color: white;
+  color: #565F82;
+}
+.started .btn-primary:hover {
+  background-color: #D2E1FF;
+}
+.started .btn-primary:active {
+  background-color: transparent;
+}
+.started .btn-primary:hover {
+  color: #3A79FF;
+}
+.started .btn-primary:active {
+  color: #C7D3FF;
+}
+.started .btn-primary:active {
+  border: 1px solid #A0B4FF;
+}
+.started .btn-disabled {
+  background-color: transparent;
+  color: #C7D3FF;
+  border: 1px solid #A0B4FF;
+}
+.started .btn-disabled:hover {
+  background-color: #D2E1FF;
+}
+.started .btn-disabled:active {
+  background-color: white;
+}
+.started .btn-disabled:hover {
+  color: #3A79FF;
+}
+.started .btn-disabled:active {
+  color: #565F82;
+}
+.started .btn-disabled:active {
+  border: none;
 }
 
 .footer {
