@@ -361,9 +361,6 @@ h5 {
   .header {
     position: absolute;
   }
-  .header__menu {
-    flex-direction: row-reverse;
-  }
   .header__navbar {
     width: 70px;
   }
@@ -378,6 +375,9 @@ h5 {
   }
 }
 @media (max-width: 576px) {
+  .header__menu {
+    flex-direction: row-reverse;
+  }
   .header__navbar label {
     display: inline-block;
     align-items: center;
