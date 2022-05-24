@@ -1,6 +1,47 @@
 .faq{
   &__wrapper{
-    padding: 176px 0;
+    padding-top: 176px;
+  }
+
+  &__description{
+    margin-bottom: 68px;
+
+    .faq__subtitle{
+      margin-bottom: 20px;
+    }
+  }
+
+  .accordion{
+    max-width: 743px;
+
+    h2{
+      font-size: 45px;
+      color: #8E96B7;
+    }
+
+    &-button{
+      display: flex;
+      flex-direction: row-reverse;
+      &:after{
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+
+    &-body{
+      p{
+        max-width: 390px;
+      }
+
+      .btn{
+        text-shadow: none;
+        padding: 13px 0;
+        &-disabled{
+          background-color: #E8ECF4;
+          color: #7382A3;
+        }
+      }
+    }
   }
 
 }

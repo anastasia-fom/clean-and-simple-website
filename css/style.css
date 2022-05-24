@@ -979,6 +979,42 @@ h5 {
   }
 }
 
+.faq__wrapper {
+  padding-top: 176px;
+}
+.faq__description {
+  margin-bottom: 68px;
+}
+.faq__description .faq__subtitle {
+  margin-bottom: 20px;
+}
+.faq .accordion {
+  max-width: 743px;
+}
+.faq .accordion h2 {
+  font-size: 45px;
+  color: #8E96B7;
+}
+.faq .accordion-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.faq .accordion-button:after {
+  margin-left: 0;
+  margin-right: auto;
+}
+.faq .accordion-body p {
+  max-width: 390px;
+}
+.faq .accordion-body .btn {
+  text-shadow: none;
+  padding: 13px 0;
+}
+.faq .accordion-body .btn-disabled {
+  background-color: #E8ECF4;
+  color: #7382A3;
+}
+
 .started {
   background-image: url("../assets/pictures/content.svg");
   background-size: cover;
