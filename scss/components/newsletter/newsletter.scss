@@ -1,0 +1,41 @@
+.newsletter{
+  background-color: #FCFDFF;
+
+  &__wrapper{
+    padding: 118px 0;
+  }
+
+  &__content{
+    &__item{
+      width: 50%;
+    }
+  }
+
+  &__description{
+    padding-left: 160px;
+  }
+
+  &__text{
+    font-size: $font-size_sm;
+    max-width: 330px;
+  }
+
+  &__form{
+
+    input{
+      width: 279px;
+      padding: 16px 168px 16px 23px;
+      background: #EFEFF7;
+      border: none;
+      border-radius: 5%;
+      margin-right: 14px;
+      margin-left: 82px;
+
+      &::placeholder{
+        @extend %font-quicksand-bold;
+        font-size: $font-size_xs;
+        color: #7A85AD;
+      }
+    }
+  }
+}

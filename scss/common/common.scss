@@ -79,20 +79,25 @@ body {
   }
 
   &.btn-primary {
-    background-color: $sub_menu_bg;
-    color: $btn-text-color;
+    @include btn-action-background($sub_menu_bg, $accent-color, $active-color);
+    @include btn-action-text($btn-text-color, white, white);
 
     &:hover {
-      background-color: $accent-color;
-      color: white;
       transition: $transition;
     }
 
     &:active {
-      background-color: $active-color;
-      color: white;
       transition: $transition;
     }
+  }
+
+  &.btn-save{
+    text-shadow: none;
+    padding: 16px 62px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+    @include btn-action-background(#4D6CE1, $active-color, $sub_menu_bg);
+    @include btn-action-text(white, white, $active-color);
   }
 }
 
@@ -132,6 +137,11 @@ h2{
 h3{
   @extend %font-quicksand-medium;
   font-size: $font-size_lg;
+  color: $text-color_subtitle;
+}
+
+h5{
+  @extend %font-quicksand-bold;
   color: $text-color_subtitle;
 }
 
