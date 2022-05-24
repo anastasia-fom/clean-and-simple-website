@@ -43,7 +43,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      @include margin-auto;
+      @include margin-auto();
 
       .btn{
         margin-top: 20px;
