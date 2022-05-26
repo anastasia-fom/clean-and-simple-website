@@ -1,0 +1,37 @@
+.quotes {
+
+  @media (max-width: $breakpoint_md) {
+    &__description {
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: $breakpoint_sm) {
+
+    .row {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: 100%;
+    }
+
+    &__customer-quotes {
+      margin-top: 50px;
+    }
+
+    &__content {
+      @include margin-auto();
+    }
+
+    &__photo {
+      left: 45%;
+    }
+
+    .carousel {
+      &-indicators {
+        margin-left: 15%;
+      }
+    }
+  }
+}

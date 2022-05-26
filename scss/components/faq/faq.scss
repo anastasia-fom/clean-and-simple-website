@@ -43,6 +43,10 @@
           background-image: url("../assets/icons/vector-bold.svg");
         }
       }
+
+      &:focus{
+        box-shadow: none;
+      }
     }
 
     &-body{

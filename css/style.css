@@ -93,7 +93,7 @@ body {
   font-weight: 300;
 }
 
-.footer__main-menu a, .faq .accordion-body .btn, .stats p, .stats, .prototype .btn.btn-disabled, .header__main-menu a, h3, .highlight {
+.footer__main-menu a, .faq .accordion-body .btn, .quotes__description h2, .stats p, .stats, .prototype .btn.btn-disabled, .header__main-menu a, h3, .highlight {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
@@ -980,6 +980,91 @@ h5 {
   }
 }
 
+.quotes {
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+}
+.quotes__wrapper {
+  padding: 109px 0;
+}
+.quotes__item {
+  width: 50%;
+}
+.quotes__description {
+  margin-left: 100px;
+}
+.quotes__description h2 {
+  margin-top: 27px;
+  margin-bottom: 12px;
+}
+.quotes__description .quotes__text {
+  max-width: 320px;
+}
+.quotes__customer-quotes {
+  margin-top: -40px;
+}
+.quotes__content {
+  background-color: white;
+  padding: 42px 40px 52px 69px;
+  max-width: 423px;
+  border: 1px solid #D8E3FE;
+  box-shadow: 0px 5px 50px #F3F5FA;
+}
+.quotes__content p {
+  max-width: 280px;
+  font-size: 14px;
+}
+.quotes__photo {
+  position: relative;
+  left: 30%;
+  bottom: 30px;
+}
+.quotes .carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quotes .carousel-indicators {
+  margin-bottom: -47px;
+  gap: 12px;
+  margin-left: 0;
+}
+.quotes .carousel-indicators [data-bs-target] {
+  background-color: #D1D6E3;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.quotes .carousel-indicators .active {
+  background-color: #5283FF;
+}
+
+@media (max-width: 767px) {
+  .quotes__description {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .quotes .row {
+    flex-direction: column;
+  }
+  .quotes__item {
+    width: 100%;
+  }
+  .quotes__customer-quotes {
+    margin-top: 50px;
+  }
+  .quotes__content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .quotes__photo {
+    left: 45%;
+  }
+  .quotes .carousel-indicators {
+    margin-left: 15%;
+  }
+}
+
 .faq__wrapper {
   padding: 176px 0;
 }
@@ -1016,6 +1101,9 @@ h5 {
 }
 .faq .accordion-button:not(.collapsed):after {
   background-image: url("../assets/icons/vector-bold.svg");
+}
+.faq .accordion-button:focus {
+  box-shadow: none;
 }
 .faq .accordion-body {
   padding: 17px 0 30px 80px;
