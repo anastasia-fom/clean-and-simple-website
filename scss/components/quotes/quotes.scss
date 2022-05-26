@@ -55,18 +55,16 @@
       margin-left: 0;
 
       & [data-bs-target] {
-        background-color: #D1D6E3;
+        background-color: $slider-color;
         width: 8px;
         height: 8px;
         border-radius: 50%;
       }
 
       & .active{
-        background-color: #5283FF;
+        background-color: $slider-color-cheked;
       }
     }
-
-
   }
 
 }

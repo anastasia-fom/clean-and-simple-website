@@ -12,6 +12,11 @@
   }
 
   @media (max-width: $breakpoint_lg) {
+    .row{
+      margin: 0;
+    }
+
+
     &__main-menu {
       ul {
         gap: 13px

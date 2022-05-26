@@ -1,8 +1,10 @@
 .app{
+  $text-color-description: #ADB3CB;
+
   background-image: url('../assets/pictures/features.svg');
 
   &__wrapper{
-    padding: 170px 0;
+    padding: 150px 0;
   }
 
   .row{
@@ -30,8 +32,10 @@
     margin-top: 90px;
 
     p{
-      max-width: 160px;
+      max-width: 140px;
       @extend %font-open-sans-semi-bold;
+      font-size: $font-size_3xs;
+      color: $text-color-description;
     }
 
     .line{
@@ -46,6 +50,10 @@
       margin: 0 17px 0 16px;
     }
 
+    .btn{
+      font-size: $font-size_xs;
+    }
+
     .btn-accent{
       @include btn-action-background($second-bacground-color,$second-text-color, #7D3030);
       @include btn-action-text($second-text-color,white,white);
@@ -53,6 +61,11 @@
 
     .btn-primary{
       text-shadow: none;
+    }
+
+    p{
+      @extend %font-open-sans-semi-bold;
+      font-size: $font-size_3xs;
     }
   }
 }

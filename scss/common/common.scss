@@ -142,9 +142,19 @@ h3{
   color: $text-color_subtitle;
 }
 
+h4{
+  @extend %font-open-sans-bold;
+  font-size: $font-size_sm;
+  color: #4074F8;
+}
+
 h5{
   @extend %font-quicksand-bold;
   color: $text-color_subtitle;
+}
+
+.m_logo{
+  @include svg_style(#757E9A, #6188FF);
 }
 
 

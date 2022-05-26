@@ -60,10 +60,7 @@
       gap: 35px
     }
 
-    @include svg_style(#B6BAC7, #6188FF);
+    @include svg_style($svg-color, #6188FF);
 
-    .m_logo{
-      @include svg_style(#757E9A, #6188FF);
-    }
   }
 }

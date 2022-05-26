@@ -1,8 +1,15 @@
 .prototype{
+  $disabled-btn-color:#ADB4D2;
+  $action-btn-color: #D1D1E4;
+
   background-color: $background-color;
 
   &__wrapper{
     padding: 170px 0;
+  }
+
+  &__content:first-child{
+    margin-left: 140px;
   }
 
   &__description{
@@ -14,7 +21,7 @@
   }
 
   &__text{
-    max-width: 380px;
+    max-width: 413px;
     width: 100%;
     margin-top: 27px;
   }
@@ -31,7 +38,7 @@
 
     &.btn-primary {
       @include btn-action-background($background-color-btn,$sub_menu_bg, $background-color);
-      @include btn-action-text(white,$btn-text-color,#D1D1E4);
+      @include btn-action-text(white,$btn-text-color,$action-btn-color);
 
       &:active {
         border: 1px solid #D1D1E4;
@@ -41,7 +48,7 @@
     &.btn-disabled{
       @extend %font-quicksand-medium;
       @include btn-action-background($background-color,$sub_menu_bg, $btn-text-color);
-      @include btn-action-text(#ADB4D2,$btn-text-color,white);
+      @include btn-action-text($disabled-btn-color,$btn-text-color,white);
       border: 1px solid $border-color-btn;
 
       &:active {
@@ -54,9 +61,10 @@
     width: 50%;
   }
 
+
   &__picture{
-    max-width: 800px;
-    margin-right: -400px;
+    max-width: 740px;
+    margin-left: -156px;
     box-shadow: 0 100px 150px #F2F6FF;
   }
 }

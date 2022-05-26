@@ -1,17 +1,19 @@
 .blog{
+  $btn-font-size: 17px;
+  $arrow-color: #A8B4E5;
   background-color: $background-color;
 
   &__wrapper{
     padding: 104px 0;
   }
 
-  h2{
+  h3{
     margin-top: 20px;
   }
 
   .arrow{
     svg{
-      stroke: #A8B4E5;
+      stroke: $arrow-color;
     }
     a {
       cursor: pointer;
@@ -104,6 +106,7 @@
 
   .btn{
     text-shadow: none;
+    font-size: $btn-font-size;
   }
 
   &__slider {

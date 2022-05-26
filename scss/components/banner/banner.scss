@@ -1,10 +1,11 @@
 .banner{
   @extend %background-image-bg;
   background-image: url('../assets/pictures/hero-image.svg');
-  background-size: cover;
-  padding-top: 100px;
   height: calc(100vh - #{$header-height});
 
+  &__wrapper{
+    padding-top: calc(100px - #{$header-height});
+  }
 
   &__subtitle{
     margin-bottom: 20px;

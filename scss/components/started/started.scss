@@ -4,7 +4,9 @@
   background-size: cover;
   color: white;
 
-  padding: 91px 0;
+  &__wrapper{
+    padding: 91px 0;
+  }
 
   &__description{
     margin-bottom: 50px;

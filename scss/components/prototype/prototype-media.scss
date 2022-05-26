@@ -23,7 +23,16 @@
     }
 
     &__text{
+      max-width: initial;
+    }
+
+    &__content:first-child{
+      margin-left: 0;
+    }
+
+    &__picture{
       max-width: 100%;
+      margin-left: 0;
     }
   }
 

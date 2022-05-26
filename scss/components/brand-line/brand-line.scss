@@ -18,12 +18,8 @@
   }
 
   svg{
-    fill: #B6BAC7;
     width: 120px;
     height: 100%;
-
-    &:hover{
-      fill: #5982E7;
-    }
+    @include svg_style($svg-color, $svg-hover-color);
   }
 }
