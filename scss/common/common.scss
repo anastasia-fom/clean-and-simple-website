@@ -73,12 +73,14 @@ body {
   padding: 13px 21px;
   border-radius: 2px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+  border: none;
 
   &:hover {
     transition: .3s;
   }
 
   &.btn-primary {
+
     @include btn-action-background($sub_menu_bg, $accent-color, $active-color);
     @include btn-action-text($btn-text-color, white, white);
 

@@ -93,12 +93,12 @@ body {
   font-weight: 300;
 }
 
-.footer__main-menu a, .stats p, .stats, .prototype .btn.btn-disabled, .header__main-menu a, h3, .highlight {
+.footer__main-menu a, .faq .accordion-body .btn, .stats p, .stats, .prototype .btn.btn-disabled, .header__main-menu a, h3, .highlight {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
 }
 
-.footer__main-menu a:hover, .newsletter__form input::placeholder, .prototype .btn.btn-disabled:active, .header__main-menu a:hover, h5, .btn {
+.footer__main-menu a:hover, .newsletter__form input::placeholder, .faq .accordion-button:not(.collapsed), .prototype .btn.btn-disabled:active, .header__main-menu a:hover, h5, .btn {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
 }
@@ -181,6 +181,7 @@ body {
   padding: 13px 21px;
   border-radius: 2px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
 }
 .btn:hover {
   transition: 0.3s;
@@ -980,7 +981,7 @@ h5 {
 }
 
 .faq__wrapper {
-  padding-top: 176px;
+  padding: 176px 0;
 }
 .faq__description {
   margin-bottom: 68px;
@@ -990,6 +991,7 @@ h5 {
 }
 .faq .accordion {
   max-width: 743px;
+  width: 100%;
 }
 .faq .accordion h2 {
   font-size: 45px;
@@ -998,21 +1000,66 @@ h5 {
 .faq .accordion-button {
   display: flex;
   flex-direction: row-reverse;
+  color: #8E96B7;
+  border-bottom: 1px solid #D8E3FE;
 }
 .faq .accordion-button:after {
   margin-left: 0;
   margin-right: auto;
+  background-image: url("../assets/icons/vector.svg");
+}
+.faq .accordion-button:not(.collapsed) {
+  color: #495274;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.faq .accordion-button:not(.collapsed):after {
+  background-image: url("../assets/icons/vector-bold.svg");
+}
+.faq .accordion-body {
+  padding: 17px 0 30px 80px;
 }
 .faq .accordion-body p {
   max-width: 390px;
 }
 .faq .accordion-body .btn {
   text-shadow: none;
-  padding: 13px 0;
+  padding: 13px 28px;
+  margin-left: 62px;
+  font-size: 13px;
 }
 .faq .accordion-body .btn-disabled {
   background-color: #E8ECF4;
   color: #7382A3;
+}
+
+@media (max-width: 767px) {
+  .faq .accordion {
+    max-width: 600px;
+  }
+  .faq .accordion-body {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .faq .accordion-body p {
+    max-width: inherit;
+    text-align: center;
+  }
+  .faq .accordion-body .btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 576px) {
+  .faq .accordion {
+    max-width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .faq .accordion {
+    max-width: 300px;
+  }
 }
 
 .started {

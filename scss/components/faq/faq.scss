@@ -1,6 +1,6 @@
 .faq{
   &__wrapper{
-    padding-top: 176px;
+    padding: 176px 0;
   }
 
   &__description{
@@ -13,6 +13,7 @@
 
   .accordion{
     max-width: 743px;
+    width: 100%;
 
     h2{
       font-size: 45px;
@@ -22,20 +23,42 @@
     &-button{
       display: flex;
       flex-direction: row-reverse;
+      color: #8E96B7;
+      border-bottom: 1px solid #D8E3FE;
+
       &:after{
         margin-left: 0;
         margin-right: auto;
+        background-image: url("../assets/icons/vector.svg");
+      }
+
+      &:not(.collapsed){
+        @extend %font-quicksand-bold;
+        color: #495274;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+
+        &:after{
+          background-image: url("../assets/icons/vector-bold.svg");
+        }
       }
     }
 
     &-body{
+      padding: 17px 0 30px 80px;
+
       p{
         max-width: 390px;
       }
 
       .btn{
+        @extend %font-quicksand-medium;
         text-shadow: none;
-        padding: 13px 0;
+        padding: 13px 28px;
+        margin-left: 62px;
+        font-size: $font-size_xs;
+
         &-disabled{
           background-color: #E8ECF4;
           color: #7382A3;

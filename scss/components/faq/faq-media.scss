@@ -1,0 +1,36 @@
+.faq {
+
+  @media (max-width: $breakpoint_md) {
+    .accordion {
+      max-width: 600px;
+
+      &-body {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+
+        p {
+          max-width: inherit;
+          text-align: center;
+        }
+
+        .btn {
+          margin-left: 0;
+        }
+      }
+
+    }
+  }
+
+  @media (max-width: $breakpoint_sm) {
+    .accordion {
+      max-width: 500px;
+    }
+  }
+
+  @media (max-width: $breakpoint_xs) {
+    .accordion {
+      max-width: 300px;
+    }
+  }
+}
