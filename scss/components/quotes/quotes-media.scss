@@ -1,12 +1,12 @@
 .quotes {
 
-  @media (max-width: $breakpoint_md) {
+  @include laptop(){
     &__description {
       margin-left: 10px;
     }
   }
 
-  @media (max-width: $breakpoint_sm) {
+  @include tablet(){
 
     .row {
       flex-direction: column;

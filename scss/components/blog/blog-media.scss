@@ -1,12 +1,12 @@
 .blog{
-  @media (max-width: $breakpoint_lg) {
+
+  @include desktop(){
     .arrow{
       display: none;
     }
-
   }
 
-  @media (max-width: $breakpoint_md) {
+  @include laptop(){
     &__content{
       flex-direction: column;
 
@@ -17,6 +17,7 @@
 
     &__description{
       margin-left: 20px;
+      margin-top: 20px;
     }
 
     .btn{
@@ -24,8 +25,7 @@
     }
   }
 
-  @media (max-width: $breakpoint_sm) {
-
+  @include tablet(){
     &__pictures-item1{
       img{
         max-width: 240px;
@@ -39,10 +39,9 @@
         height: 112px;
       }
     }
-
   }
 
-  @media (max-width: $breakpoint_xs) {
+  @include mobile(){
     &__content-item{
       flex-direction: column;
     }

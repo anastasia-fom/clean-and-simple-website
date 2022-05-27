@@ -38,7 +38,7 @@
         height: 8px;
         background-image: url("../assets/icons/vector.svg");
         margin-right: 24px;
-        %background-image-bg;
+        @extend %background-image-bg;
       }
 
       &:not(.collapsed){

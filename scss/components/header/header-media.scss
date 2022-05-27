@@ -11,7 +11,7 @@
     }
   }
 
-  @media (max-width: $breakpoint_lg) {
+  @include desktop(){
     .row{
       margin: 0;
     }
@@ -25,7 +25,7 @@
   }
 
 
-  @media (max-width: $breakpoint_md) {
+  @include laptop(){
     position: absolute;
 
     &__navbar{
@@ -43,10 +43,9 @@
     &__col {
       width: initial;
     }
-
   }
 
-  @media (max-width: $breakpoint_sm) {
+  @include tablet() {
     &__menu {
       flex-direction: row-reverse;
     }
@@ -86,7 +85,8 @@
 
       #toggler:checked ~ .header__main-menu {
         max-height: 100%;
-        ul{
+
+        ul {
           display: block;
           position: absolute;
           width: 100%;
@@ -117,18 +117,17 @@
         align-items: center;
         padding: 20px;
       }
-
     }
 
-    @media (max-width: $breakpoint_xs) {
+  }
 
-      &_cta {
-        display: none;
-      }
+  @include mobile(){
+    &_cta {
+      display: none;
+    }
 
-      .visible-xs {
-        display: list-item;
-      }
+    .visible-xs {
+      display: list-item;
     }
   }
 }

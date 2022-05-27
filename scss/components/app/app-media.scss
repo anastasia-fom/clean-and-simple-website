@@ -1,18 +1,16 @@
 .app{
 
-  @media (max-width: $breakpoint_lg) {
+  @include desktop(){
     &__wrapper{
       padding: 100px 0;
     }
-
   }
 
-  @media (max-width: $breakpoint_md) {
+  @include laptop(){
     padding-bottom: 100px;
   }
 
-  @media (max-width: $breakpoint_xs) {
-
+  @include tablet(){
     &__wrapper{
       padding-top: 60px;
     }

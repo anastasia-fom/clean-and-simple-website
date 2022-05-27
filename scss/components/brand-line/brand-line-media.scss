@@ -1,6 +1,6 @@
 .brand-line{
 
-  @media (max-width: $breakpoint_md){
+  @include laptop(){
     &__wrapper {
       padding: 20px 0;
     }
@@ -21,7 +21,7 @@
     }
   }
 
-  @media (max-width: $breakpoint_xs){
+  @include mobile(){
     svg{
       width: 100px;
     }

@@ -1,7 +1,6 @@
 .prototype{
 
-  @media (max-width: $breakpoint_lg) {
-
+  @include desktop(){
     &__picture {
       width: 100%;
       margin-right: 0;
@@ -35,5 +34,4 @@
       margin-left: 0;
     }
   }
-
 }

@@ -1,7 +1,6 @@
 .stats{
 
-  @media (max-width: $breakpoint_xs) {
-
+  @include mobile(){
     .row{
       flex-direction: column;
     }

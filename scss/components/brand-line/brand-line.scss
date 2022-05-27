@@ -20,6 +20,10 @@
   svg{
     width: 120px;
     height: 100%;
-    @include svg_style($svg-color, $svg-hover-color);
+    fill: $svg-color;
+
+    &:hover{
+      fill:$svg-hover-color;
+    }
   }
 }

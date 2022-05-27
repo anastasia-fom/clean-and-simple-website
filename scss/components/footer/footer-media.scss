@@ -1,6 +1,6 @@
 .footer {
-  
-  @media (max-width: $breakpoint_md) {
+
+  @include laptop(){
     &__logo{
       align-items: flex-start;
     }
@@ -21,12 +21,11 @@
     }
   }
 
-  @media (max-width: $breakpoint_xs) {
-
-   .row{
-     justify-content: center;
-     flex-direction: column;
-   }
+  @include mobile(){
+    .row{
+      justify-content: center;
+      flex-direction: column;
+    }
 
     &__col{
       width: 100%;
@@ -61,6 +60,5 @@
     .btn{
       text-align: center;
     }
-
   }
 }

@@ -1,6 +1,6 @@
 .faq {
 
-  @media (max-width: $breakpoint_md) {
+  @include laptop(){
     .accordion {
       max-width: 600px;
 
@@ -18,17 +18,16 @@
           margin-left: 0;
         }
       }
-
     }
   }
 
-  @media (max-width: $breakpoint_sm) {
+  @include tablet(){
     .accordion {
       max-width: 500px;
     }
   }
 
-  @media (max-width: $breakpoint_xs) {
+  @include mobile(){
     .accordion {
       max-width: 300px;
     }
