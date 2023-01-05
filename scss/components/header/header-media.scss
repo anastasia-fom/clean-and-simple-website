@@ -30,6 +30,7 @@
 
     &__navbar{
       width: 70px;
+      display: flex;
     }
 
     &__wrapper {
@@ -46,10 +47,6 @@
   }
 
   @include tablet() {
-    &__menu {
-      flex-direction: row-reverse;
-    }
-
     &__navbar {
       label {
         display: inline-block;
@@ -122,6 +119,9 @@
   }
 
   @include mobile(){
+    &__content{
+      gap: 15px;
+    }
     &_cta {
       display: none;
     }

@@ -7,4 +7,10 @@
       padding-top: 100px;
     }
   }
+
+  @include mobile(){
+    h1{
+      font-size: 40px;
+    }
+  }
 }

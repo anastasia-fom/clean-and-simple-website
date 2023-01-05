@@ -26,10 +26,4 @@
       max-width: 500px;
     }
   }
-
-  @include mobile(){
-    .accordion {
-      max-width: 300px;
-    }
-  }
 }

@@ -29,6 +29,7 @@
 
     &__col{
       width: 100%;
+      flex-direction: column;
 
       p{
         font-size: $font-size_xs;

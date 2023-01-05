@@ -34,4 +34,11 @@
       margin-left: 0;
     }
   }
+
+  @include mobile(){
+    &__buttons{
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
 }

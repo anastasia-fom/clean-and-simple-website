@@ -45,6 +45,11 @@
       align-items: center;
       @include margin-auto();
 
+      input{
+        width: 100%;
+        margin-right: 0;
+      }
+
       .btn{
         margin-top: 20px;
       }
