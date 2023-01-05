@@ -371,6 +371,7 @@ h5 {
   }
   .header__navbar {
     width: 70px;
+    display: flex;
   }
   .header__wrapper {
     position: relative;
@@ -383,9 +384,6 @@ h5 {
   }
 }
 @media (max-width: 576px) {
-  .header__menu {
-    flex-direction: row-reverse;
-  }
   .header__navbar label {
     display: inline-block;
     align-items: center;
@@ -395,15 +393,15 @@ h5 {
     margin-left: 30px;
   }
   .header__navbar .menu-btn,
-.header__navbar .menu-btn::before,
-.header__navbar .menu-btn::after {
+  .header__navbar .menu-btn::before,
+  .header__navbar .menu-btn::after {
     position: absolute;
     width: 30px;
     height: 2px;
     background-color: #5E81FE;
   }
   .header__navbar .menu-btn::before,
-.header__navbar .menu-btn::after {
+  .header__navbar .menu-btn::after {
     content: "";
   }
   .header__navbar .menu-btn::before {
@@ -443,6 +441,9 @@ h5 {
   }
 }
 @media (max-width: 480px) {
+  .header__content {
+    gap: 15px;
+  }
   .header_cta {
     display: none;
   }
@@ -517,6 +518,11 @@ h5 {
   }
   .banner__wrapper {
     padding-top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 40px;
   }
 }
 
@@ -664,6 +670,12 @@ h5 {
     margin-left: 0;
   }
 }
+@media (max-width: 480px) {
+  .prototype__buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 
 .app {
   background-image: url("../assets/pictures/features.svg");
@@ -735,11 +747,6 @@ h5 {
     padding: 100px 0;
   }
 }
-@media (max-width: 767px) {
-  .app {
-    padding-bottom: 100px;
-  }
-}
 @media (max-width: 576px) {
   .app__wrapper {
     padding-top: 60px;
@@ -752,7 +759,7 @@ h5 {
   }
   .app__item {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .app__item p {
     max-width: 100%;
@@ -1005,7 +1012,7 @@ h5 {
     margin-bottom: 25px;
   }
   .blog .blog__content p {
-    width: 260px;
+    width: 90%;
   }
 }
 
@@ -1190,11 +1197,6 @@ h5 {
     max-width: 500px;
   }
 }
-@media (max-width: 480px) {
-  .faq .accordion {
-    max-width: 300px;
-  }
-}
 
 .started {
   background-image: url("../assets/pictures/content.svg");
@@ -1260,6 +1262,13 @@ h5 {
 }
 .started .btn-disabled:active {
   border: none;
+}
+
+@media (max-width: 480px) {
+  .started__buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 .newsletter {
@@ -1330,6 +1339,10 @@ h5 {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+  }
+  .newsletter__form input {
+    width: 100%;
+    margin-right: 0;
   }
   .newsletter__form .btn {
     margin-top: 20px;
@@ -1422,6 +1435,7 @@ h5 {
   }
   .footer__col {
     width: 100%;
+    flex-direction: column;
   }
   .footer__col p {
     font-size: 13px;
